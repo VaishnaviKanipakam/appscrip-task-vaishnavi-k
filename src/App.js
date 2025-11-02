@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./componets/Header";
+import Filters from "./componets/Filters";
+import ProductCard from "./componets/ProductCard";
+import Footer from "./componets/Footer";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
-function App() {
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="app-contianer">
+      <Header />
+      <div className="discover-products-container">
+        <h1 className="discover-products-heading">DISCOVER OUR PRODUCTS</h1>
+        <p className="discover-products-description">
+          Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus
+          scelerisque. Dolor integer scelerisque nibh amet mi ut elementum
+          dolor.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+
+      <div className="recomended-hide-filter-container">
+        <p className="items-count">3425 Items</p>
+        <div className="app-arrow-filter-container">
+          <MdKeyboardArrowLeft className="app-left-arrow" />
+          <p className="app-hide-filter">HIDE FILTER</p>
+        </div>
+
+        <select className="app-recomended">
+          <option value="recomended">RECOMMENDED</option>
+          <option value="newestfirst">NEWEST FIRST</option>
+          <option value="popular">POPULAR</option>
+          <option value="popular">PRICE: HIGH TO LOW</option>
+          <option value="popular">PRICE: LOW TO HIGH</option>
+        </select>
+      </div>
+
+      <div className="filters-product-card-components-container">
+        <Filters />
+        <ProductCard />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
