@@ -1,0 +1,480 @@
+.app-contianer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  box-sizing: border-box;
+  width: 1440px;
+  overflow: scroll;
+  scrollbar-width: none;
+  background-color: #ffffff;
+}
+
+.discover-products-container {
+  width: 721px;
+  height: 168px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.discover-products-heading {
+  width: 666px;
+  height: 72px;
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-size: 45px;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #252020;
+  margin: 0px;
+}
+
+.discover-products-description {
+  width: 721px;
+  height: 80px;
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #252020;
+  margin: 0px;
+}
+
+.recomended-hide-filter-container {
+  width: 1248px;
+  height: 88px;
+  border-width: 1px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  border-left: none;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+}
+
+.items-count {
+  height: 40px;
+  font-family: "Simplon Norm";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #252020;
+}
+
+.app-arrow-filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.app-left-arrow {
+  width: 16px;
+  height: 16px;
+  color: #888792;
+}
+
+.app-hide-filter {
+  font-family: "Adobe Caslon Pro";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #888792;
+  margin: 0px;
+}
+
+.app-recomended {
+  width: 144px;
+  height: 40px;
+  font-family: "Simplon Norm";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #252020;
+  margin: 0px;
+  border: none;
+}
+
+.recomended-options {
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 18px;
+  text-align: right;
+  color: #252020;
+}
+
+.filters-product-card-components-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1248px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.header-container {
+  width: 1440px;
+  height: 220px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-lorem-container {
+  background-color: #000000;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 1;
+  padding-top: 8px;
+  padding-right: 274px;
+  padding-bottom: 8px;
+  padding-left: 274px;
+  box-sizing: border-box;
+}
+
+.header-lorem-name {
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  color: #eb4c6b;
+}
+
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.header-logo-icon {
+  width: 35.614322662353516px;
+  height: 35.65713119506836px;
+  color: #000000;
+}
+
+.header-logo-heading {
+  font-family: "Inter";
+  font-weight: 800;
+  font-style: "Extra Bold";
+  font-size: 36px;
+  vertical-align: middle;
+  color: #000000;
+}
+
+.header-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 244px;
+  height: 24px;
+  gap: 24px;
+  color: #000000;
+}
+
+.header-icons {
+  width: 24px;
+  height: 24px;
+  color: #000000;
+}
+
+.header-select {
+  border: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.header-tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 636px;
+  height: 24px;
+  gap: 64px;
+  margin-top: 40px;
+}
+
+.header-tab-name {
+  font-family: "Simplon Norm";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  vertical-align: middle;
+  color: #252020;
+}
+
+.filters-container {
+  width: 300px;
+  height: 846px;
+  box-sizing: border-box;
+}
+
+.filters-name {
+  font-family: "Simplon Norm";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  color: #252020;
+}
+
+.filters-hr-line {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+}
+
+.filters-select-tag {
+  border: none;
+  font-family: "Simplon Norm";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  color: #252020;
+  width: 100%;
+  height: 52px;
+}
+
+.filters-select-option {
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-size: 16px;
+  color: #252020;
+}
+
+.filters-all {
+  margin: 0px;
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #252020;
+}
+
+.product-card-container {
+  width: 932px;
+  height: 2932px;
+  overflow: scroll;
+  scrollbar-width: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.product-card-item-container {
+  list-style-type: none;
+  width: 300px;
+  height: fit-content;
+  margin: 0px 10px 20px 10px;
+}
+
+.product-item-image {
+  width: 300px;
+  height: 399px;
+}
+
+.product-title {
+  font-family: "Simplon Norm";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  color: #252020;
+  margin: 10px 0px 0px 0px;
+}
+
+.product-description-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  box-sizing: border-box;
+  margin: 10px 0px 0px 0px;
+}
+
+.product-description {
+  width: 251px;
+  height: 17px;
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 14px;
+  color: #888792;
+}
+
+.product-sign-in {
+  text-decoration: underline;
+}
+
+.product-like-icon {
+  width: 24px;
+  height: 24px;
+  color: #000000;
+}
+
+.footer-container {
+  width: 1440px;
+  height: 750px;
+  background-color: #000000;
+  color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-top-contianer {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  height: 300px;
+  margin: 20px 0px 0px 0px;
+}
+
+.footer-email-container {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-contact-us-container {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-heading {
+  font-family: "Simplon Norm";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-description {
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.footer-email-button-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+
+.footer-email {
+  width: 384px;
+  height: 47px;
+  color: #000000;
+}
+
+.footer-subscribe-button {
+  width: 184px;
+  height: 48px;
+  border: 1.14px solid #ffffff;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.footer-hr-line {
+  width: 80%;
+  align-self: center;
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+}
+
+.footer-bottom-contianer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: fit-content;
+  margin: 20px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+.footer-metta-muse-container {
+  width: 166px;
+  height: 260px;
+}
+
+.footer-bottom-container-description {
+  font-family: "Simplon Norm";
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer-quick-links-container {
+  width: 163px;
+  height: 298px;
+}
+
+.footer-follow-us-container {
+  width: 600px;
+  height: 298px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+}
+
+.footer-payments-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-payment-icon {
+  color: #ffffff;
+  width: 56px;
+  height: 35px;
+}
+
