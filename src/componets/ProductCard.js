@@ -3,7 +3,7 @@ import { CiHeart } from "react-icons/ci";
 
 import "../App.css";
 
-const ProductCard = () => {
+const ProductCard = ({toggleSideFilters}) => {
   const [productsList, setProductsList] = useState([]);
 
   const getAllProducts = async () => {
@@ -34,8 +34,14 @@ const ProductCard = () => {
     getAllProducts();
   }, []);
 
-  return (  
-    <ul className="product-card-container">
+  return (
+    <ul className="product-card-container" 
+    style={{
+      display: "grid",
+      gridTemplateColumns: toggleSideFilters ? "repeat(3, minmax(250px, 1fr))" : "repeat(4, minmax(250px, 1fr))" ,
+      gap: "20px"
+    }}
+    >
       {productsList.map((eachProduct) => (
         <li key={eachProduct.id} className="product-card-item-container">
           <img

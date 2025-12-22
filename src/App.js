@@ -3,10 +3,21 @@ import Filters from "./componets/Filters";
 import ProductCard from "./componets/ProductCard";
 import Footer from "./componets/Footer";
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 import "./App.css";
 
 const App = () => {
+  const [toggleSideFilters, setToggleSideFilters] = useState(true);
+
+  // const onClickHideFilterButton = () => {
+  //   console.log(toggleSideFilters)
+  // }
+
+  // useEffect (() => {
+  //   onClickHideFilterButton()
+  // }, [])
+
   return (
     <div className="app-contianer">
       <Header />
@@ -23,7 +34,12 @@ const App = () => {
         <p className="items-count">3425 Items</p>
         <div className="app-arrow-filter-container">
           <MdKeyboardArrowLeft className="app-left-arrow" />
-          <p className="app-hide-filter">HIDE FILTER</p>
+          <button
+            onClick={() => setToggleSideFilters(prev => !prev)}
+            className="app-hide-filter"
+          >
+            HIDE FILTER
+          </button>
         </div>
 
         <select className="app-recomended">
@@ -36,8 +52,13 @@ const App = () => {
       </div>
 
       <div className="filters-product-card-components-container">
-        <Filters />
-        <ProductCard />
+        {toggleSideFilters && (<Filters />)}
+        <div style={{
+          width: toggleSideFilters ? "932px" : "100%"
+        }}>
+          <ProductCard toggleSideFilters={toggleSideFilters}/>
+        </div>
+        
       </div>
       <Footer />
     </div>
