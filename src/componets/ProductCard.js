@@ -18,10 +18,8 @@ const ProductCard = ({ toggleSideFilters, sortProducts }) => {
       },
     };
     const response = await fetch(url, options);
-    console.log("19", response);
     if (response.ok === true) {
       const data = await response.json();
-      console.log("22", data);
       const updatedData = data.map((eachProduct) => ({
         id: eachProduct.id,
         title: eachProduct.title,

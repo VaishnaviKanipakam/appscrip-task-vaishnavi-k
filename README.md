@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+-We can filter the products using the filter mthod based on price 
+-Responsiveness is achieved using grid columns the produc carts will show and hide based on the view port with 
+-If we click on the hide filter text the filters on the left side will hide 
