@@ -3,8 +3,9 @@ import { CiHeart } from "react-icons/ci";
 
 import "../App.css";
 
-const ProductCard = ({toggleSideFilters}) => {
+const ProductCard = ({ toggleSideFilters, sortProducts }) => {
   const [productsList, setProductsList] = useState([]);
+
 
   const getAllProducts = async () => {
     const url = "https://fakestoreapi.com/products";
@@ -25,24 +26,38 @@ const ProductCard = ({toggleSideFilters}) => {
         id: eachProduct.id,
         title: eachProduct.title,
         image: eachProduct.image,
+        price: eachProduct.price
       }));
       setProductsList(updatedData);
+      
     }
   };
+
+  const geSortedProducts = () => {
+    const sortedProducts = [...productsList]
+
+    if(sortProducts === "low-to-high"){
+      return sortedProducts.sort((a,b) => a.price - b.price)
+    }
+
+     if(sortProducts === "high-to-low"){
+      return sortedProducts.sort((a,b) => b.price - a.price)
+    }
+
+    return sortedProducts
+  }
 
   useEffect(() => {
     getAllProducts();
   }, []);
 
   return (
-    <ul className="product-card-container" 
-    style={{
-      display: "grid",
-      gridTemplateColumns: toggleSideFilters ? "repeat(3, minmax(250px, 1fr))" : "repeat(4, minmax(250px, 1fr))" ,
-      gap: "20px"
-    }}
+    <ul
+      className={`product-card-container ${
+        toggleSideFilters ? "three-cols" : "four-cols"
+      }`}
     >
-      {productsList.map((eachProduct) => (
+      {geSortedProducts().map((eachProduct) => (
         <li key={eachProduct.id} className="product-card-item-container">
           <img
             src={eachProduct.image}

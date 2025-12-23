@@ -3,21 +3,14 @@ import Filters from "./componets/Filters";
 import ProductCard from "./componets/ProductCard";
 import Footer from "./componets/Footer";
 import { MdKeyboardArrowLeft } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import "./App.css";
 
 const App = () => {
   const [toggleSideFilters, setToggleSideFilters] = useState(true);
-
-  // const onClickHideFilterButton = () => {
-  //   console.log(toggleSideFilters)
-  // }
-
-  // useEffect (() => {
-  //   onClickHideFilterButton()
-  // }, [])
-
+ const [sortProducts, setSordProducts] = useState()
+  
   return (
     <div className="app-contianer">
       <Header />
@@ -42,12 +35,12 @@ const App = () => {
           </button>
         </div>
 
-        <select className="app-recomended">
+        <select className="app-recomended" onChange={(e) => setSordProducts(e.target.value)}>
           <option value="recomended">RECOMMENDED</option>
           <option value="newestfirst">NEWEST FIRST</option>
           <option value="popular">POPULAR</option>
-          <option value="popular">PRICE: HIGH TO LOW</option>
-          <option value="popular">PRICE: LOW TO HIGH</option>
+          <option value="high-to-low">PRICE: HIGH TO LOW</option>
+          <option value="low-to-high">PRICE: LOW TO HIGH</option>
         </select>
       </div>
 
@@ -56,7 +49,7 @@ const App = () => {
         <div style={{
           width: toggleSideFilters ? "932px" : "100%"
         }}>
-          <ProductCard toggleSideFilters={toggleSideFilters}/>
+          <ProductCard toggleSideFilters={toggleSideFilters} sortProducts={sortProducts}/>
         </div>
         
       </div>
